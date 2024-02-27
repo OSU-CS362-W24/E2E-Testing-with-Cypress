@@ -254,6 +254,8 @@ function startTodosApp() {
         const todoElem = document.createElement("li")
         todoElem.classList.add("todo")
         todoElem.dataset.id = todo.id
+		todoElem.dataset.testid = `todo-${todo.id}`
+		
 
         /*
          * If the todo is an archived todo, add "delete" and "unarchive"
